@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="shortcut icon" href="./src/img/user.png" >
+  
+
+  <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+
+  <title>Portifolio</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+          <div class="logo">
+            <img src="./src/img/user.png" alt="LogoPlayStation" height="60px">
+          </div>
+            <nav id="menuList">
+              <a href="#about">Quem Sou</a>
+              <a href="#projects">Projetos</a>
+              <a href="#skills">Conhecimentos</a>
+              <a href="#contact">Contato</a>
+            </nav>           
+          <div class="menu">
+            <img src="./src/img/menu.png" alt="" height="20px" onclick="togglemenu()">           
+          </div>
+        </div>
+
+        <div class="row" id="Home">
+            <div class="col-1 line-l">
+              <h3>Olá, me chamo </h3>
+              <h2>Ruan Meidson.</h2>
+              <p>Seja bem vindo ao meu portifólio!</p>
+              <br>
+              <a href="">Instagram</a>
+              <!-- <a href="">LinkdIn</a> -->
+            </div>
+          <div class="col-2">
+              <img src="./src/img/programing.svg" class="controller">
+              <div class="color-box"></div>
+          </div>
+        </div>
+
+        <div class="row" id="about">
+            <div class="col-1 line-l">
+              <h2>Quem sou ?</h2><br>
+              <p> Meu nome é Ruan Meidson, sou Bacharel em Sistemas de informação. <br> 
+                  Desenvolvo sistemas com interfaces modernas e de alta qualidade, 
+                  concentrado em performance e responsividade.
+              </p>
+              <!-- <br> -->
+              <!-- <a href="">Instagram</a>
+              <a href="">LinkdIn</a> -->
+            </div>
+            <div class="col-3">
+              <img src="./src/img/user.png" alt="" class="user">
+            </div>
+        </div>
+
+        <div class="row" id="projects">
+            <div class="col-4">
+              <h1>Projetos</h1><br>
+            </div>
+            <div class="row-2">
+              <div class="card">
+                <h4>Dashboard SPA Corpo de Praia & Bronze</h4><br>
+                <p>
+                    O sistema tem como base armazenar dados do SPA para facilitar <br>
+                    o processo dos serviços prestados pelo estabelecimento atualmente.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4>Clone E-commerce Sony </h4><br>
+                <p>
+                    Com o objetivo academico, aprimorar conhecimentos.
+                </p>            
+              </div>
+            </div>
+            <a href="https://github.com/Meidson777/">Repositories GitHub</a>
+            
+        </div>
+        
+        <div class="row" id="skills">
+          <div class="col-1">
+            <h1>Conhecimentos</h1>
+          </div>
+          <div class="row-2 slide-mobile">
+            <div class="card-skill">
+              <h4>HTML</h4><br>
+              <img src="./src/img/html-5.png" width="120px">
+            </div>
+
+            <div class="card-skill fade">
+              <h4>PHP</h4><br>
+              <img src="./src/img/php.png" width="120px">
+            </div>
+
+            <div class="card-skill fade">
+              <h4>CSS</h4><br>
+              <img src="./src/img/css.png" width="120px">
+            </div>
+
+            <div class="card-skill fade">
+              <h4>Laravel</h4><br>
+              <img src="./src/img/laravel.png" width="120px">
+            </div>
+
+            <div class="card-skill fade">
+              <h4>React Native</h4><br>
+              <img src="./src/img/react-native.png" width="120px">
+            </div>
+
+            <div class="card-skill fade">
+              <h4>Java Script</h4><br>
+              <img src="./src/img/js.png" width="120px">
+            </div>
+
+          </div>
+              
+        </div>
+      
+        <div class="row" id="contact">
+        <div class="col-1">
+          <h2>Contato</h2>
+          <h3></h3>
+          <br>
+          <a href="">Instagram</a>
+          <a href="">LinkdIn</a>
+          <a href="https://github.com/Meidson777/" target="_blank">GitHub</a>
+        </div>
+        </div>
+    
+        
+    </main>
+    <footer>
+      © 2022 - Created by Ruan Meidson <img class="perfil" src="./src/img/perfil.jpg" width="50px">
+    </footer>
+
+   
+
+
+</body>
+
+<!-- Menu Responsive -->
+<script>
+
+  var menuList = document.getElementById("menuList");
+  
+  menuList.style.maxHeight= "0px";
+
+    function togglemenu()
+    {
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "160px";
+
+        }else{
+          menuList.style.maxHeight = "0px";
+        }
+    }
+
+  
+
+</script>
+
+</html>
