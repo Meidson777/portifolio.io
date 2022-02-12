@@ -2,7 +2,8 @@
     margin: 0;
     color: var(--font-one);
     font-family: 'Nunito', sans-serif;
-    
+    scroll-behavior: smooth;
+    scroll-margin: 50px;
 }
 
 :root{

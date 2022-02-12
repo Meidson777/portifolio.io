@@ -1,2 +1,2 @@
-# portifolio.io
-My portifólio
+# portfolio.io
+Meu portfólio
